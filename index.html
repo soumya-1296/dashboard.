@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Providing top-quality healthcare services for you and your family.">
+    <meta name="keywords" content="hospital, healthcare, medical services, doctors">
+    <title>MY HOSPITAL | Quality Healthcare</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div id="full">
+        <!-- Navbar -->
+        <header id="main">
+            <div class="logo">MEDI<span>CARE</span></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+
+                    <!-- Logins Dropdown -->
+                    <li class="dropdown">
+                        <a href="#signin-menu">Logins</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="appointment.html" class="appointment-btn">Book an Appointment</a>
+        </header>
+
+        <div id="fakeheader"></div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="happy-doctor-holding-clipboard-with-patients.jpg" alt="Doctor with patients">
+            <div class="hero-text">
+                <h1>Your Health, Our Priority</h1>
+                <p>Providing the Best medical care for you and your family.</p>
+            </div>
+        </section>
+
+        <!-- Sign-in Menu -->
+        <ul class="menu" id="signin-menu">
+            <li>
+                <div class="container">
+                    <a href="#" class="close-btn">&times;</a> <!-- Close button -->
+                    <h2>Sign In</h2>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    
+                    <select required>
+                        <option value="" disabled selected>Select Role</option>
+                        <option value="admin">Administration</option>
+                        <option value="patient">Patient</option>
+                    </select>
+                    
+                    <button type="submit">Sign In</button>
+                    
+                    <p class="register-link">Don't have an account? <a href="#signup-menu">Register here</a></p>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Sign-up Menu -->
+        <ul class="menu" id="signup-menu">
+            <li>
+                <div class="container">
+                    <a href="#" class="close-btn">&times;</a> <!-- Close button -->
+                    <h2>Register</h2>
+                    <input type="text" placeholder="Username" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                    
+                    <p class="register-link">Already have an account? <a href="#signin-menu">Sign In</a></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
