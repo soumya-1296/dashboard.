@@ -1,0 +1,175 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        #full {
+            height: 100%;
+            width: 100%;
+        }
+
+        #main {
+            width: 100%;
+            background-color: #5ae8ad;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color:blue;
+        }
+
+        .logo span {
+            color:deeppink;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .appointment-btn {
+            background-color:blue;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+        #fakeheader {
+            height: 60px;
+            width: 100%;
+            background-color: white;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 20%;
+            left: 2%;
+            color: #460083;
+            text-align: center;
+            padding: 20px;
+            font-size: larger;
+        }
+        .menu {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(228, 234, 234);
+            list-style: none;
+            padding: 20px;
+            margin: 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            min-width: 300px;
+            z-index: 1000;
+        }
+
+        
+        #signin-menu:target, #signup-menu:target {
+            display: block;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        .close-btn:hover {
+            color: darkred;
+        }
+
+        
+        .register-link {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .register-link a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
